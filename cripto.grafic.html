@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual a onda hoje ?</title>
+    
+
+<style>
+body{background-color:#6e6eed;font:400 15pt arial}header{color:#fff;text-align:center;text-shadow:1px 1px 5px #000}section{background:#8dd99d;border-radius:10px;padding:15px;width:500px;margin:auto;box-shadow:5px 5px 10px #000;text-align:center}div{text-align:center;padding:12px 12px 12px 0}footer{color:#f0f8ff;text-align:center}section1{display:flex;flex-direction:column;align-items:center;justify-content:center}#relogioDigital{font-family:Arial,Helvetica,sans-serif,monospace;display:flex;align-items:center;justify-content:center;user-select:none;margin:1rem;padding:1rem;background-image:linear-gradient(#09f118,#010101,green);box-shadow:2px 2px 2px #000;text-shadow:2px 2px 2px #000;width:20%;color:#f5f3fb;border:0;border-radius:8px;font-size:2rem;text-align:center}#telaSmart{font-family:Arial,Helvetica,sans-serif,monospace;display:flex;flex-direction:column;justify-content:center;user-select:none;padding:1rem;border-radius:20px;box-shadow:2px 2px 2px #000;background-image:linear-gradient(#0fef22,#080808,green);color:#dbe7dd;text-align:center;text-shadow:2px 2px 2px #000;font-size:2rem}#relogioDigital:hover{animation:piscar 1s infinite;background-image:linear-gradient(#f1e4e4,green,green)}#telaSmart:hover{background-image:linear-gradient(black,green,#18db59);font-size:40px;width:20%}#relogioSmart{user-select:auto;margin-top:1rem}#relogioSmart:hover{animation:piscar 1s infinite}#hSmart,#mSmart{font-size:2rem}#sSmart{font-size:1.5rem}#dataSmart{user-select:none;color:#ff00ff;display:inline-block;font-size:1rem}#semana{color:#adff2f}@keyframes piscar{to{opacity:1}from{opacity:0}}.doisPontos{animation:piscar 1s infinite}.doisPontos:Last-child{font-size:.5rem}#temperatura{animation:piscar 1s infinite;user-select:none;margin-top:1rem;font-family:sans-serif;font-size:.5rem;color:#f0f8ff}input{background-image:linear-gradient(#43c64a,#dae4da,#00ff1e);text-align:center;margin:auto;cursor:pointer;transition:.5s;border-radius:15px}input:hover{color:#0b0b0b;background:#07c52a;font-size:larger}#nav>a:hover{cursor:pointer;border:10px solid transparent;background:green}input[type=file]{color:#ede8e8;width:300px;height:30px;line-height:30px;text-align:center}h1{background-image:linear-gradient(green,#00f,#fff);width:auto;height:auto;line-height:auto;text-align:center}body{background-image:radial-gradient(rgba(5,181,20,.757),rgba(2,1,15,.523),rgba(31,12,177,.887));color:#f0f8ff}
+
+</style>
+
+
+
+</head>
+
+<body onload=moveRelogio()><header><h1>ANÁLISE TÉCNICA</h1></header><main class=tela-principal><section1 class=conteudo><div id=relogioDigital><span id=h></span>: <span id=m></span>: <span id=s></span></div><div id=telaSmart><div id=relogioSmart><span id=hSmart></span> <span class=doisPontos>:</span> <span id=mSmart></span> <span class=doisPontos>:</span> <span id=sSmart></span></div><div id=dataSmart><span id=semana></span> <span id=data></span></div><div id=temperatura><h1 class=city></h1><h2><span id=temp></span> Time is Money <span id=umidad></span>Vagabaund</h2></div></div></section1></main><br><br><div>Calcule : <input type=number name=txtn1 id=txtn1> X <input type=number name=txtn2 id=txtn2> <input type=button value=Calcular onclick=multiplicar1()><p>Retorno Provável :</p><div id=res>Ganhos</div></div><header><h1>CRIPTO / PRICE / AÇÕES</h1></header><section><div><div class=cb-price-table-widget data-locale=en data-country=US data-base-currency=BRL data-asset-ids=5b71fc48-3dd3-540c-809b-f8c94d0e68b5,ecd5367c-801d-5160-8c7a-6bb5f9bb018b,e17a44c8-6ea1-564f-a02c-2a9ca1d8eec4,d6031388-71ab-59c7-8a15-a56ec20d6080,9220d47f-bc0a-53ad-9646-ef49918adcf3,39da8cbd-f0f9-5bab-b6a1-db0a63748724,d85dce9b-5b73-5c3c-8978-522ce1d1c1b4></div><script async src=https://price-table-widget.coinbase.com/embed-v1.1.js></script></div><div><div class=cb-widget data-asset-symbol=WLUNA data-asset-id=ecd5367c-801d-5160-8c7a-6bb5f9bb018b data-period=hour data-show-chart=true data-show-stats=true data-locale=en data-country=US data-base=USD data-slug=wrapped-luna-token></div><script async src=https://widget.coinbase.com/embed-v1.3.js></script><div class=cb-widget data-asset-symbol=WLUNA data-asset-id=ecd5367c-801d-5160-8c7a-6bb5f9bb018b data-period=week data-show-chart=true data-show-stats=true data-locale=en data-country=US data-base=USD data-slug=wrapped-luna-token></div><script async src=https://widget.coinbase.com/embed-v1.3.js></script><div class=cb-widget data-asset-symbol=BabyDoge data-asset-id=39da8cbd-f0f9-5bab-b6a1-db0a63748724 data-period=day data-show-chart=true data-show-stats=true data-locale=en data-country=US data-base=USD data-slug=baby-doge-coin></div><script async src=https://widget.coinbase.com/embed-v1.3.js></script></div><h2>AÇÕES GLOBAIS</h2><div><iframe height=380 width=495 src="https://ssltvc.investing.com/?pair_ID=6395&height=480&width=650&interval=300&plotStyle=area&domain_ID=30&lang_ID=12&timezone_ID=10"></iframe></div></section><footer><p>@salgadoprocult@gmail.com</p></footer></body>
+
+
+<script>
+
+function multiplicar1() {
+    var tn1 = window.document.getElementById('txtn1')
+    var tn2 = window.document.getElementById('txtn2')
+    var res = window.document.getElementById('res')
+    var n1 = Number(tn1.value)
+    var n2 = Number(tn2.value)
+
+    var s1 = n1 * n2 
+    res.innerHTML = ('R$ ' + s1 ) }
+
+
+    let relogio = document.querySelector('#relogio')
+    let h = document.querySelector('#h')
+    let m = document.querySelector('#m')
+    let s = document.querySelector('#s')
+
+    let hSmart = document.querySelector('#hSmart')
+    let mSmart = document.querySelector('#mSmart')
+    let sSmart = document.querySelector('#sSmart')
+
+    let data = document.querySelector('#data')
+    let semana = document.querySelector('#semana')
+
+    let datahora = new Date()
+    //console.log(dataHora)
+
+    function moveRelogio() {
+
+        let momentoAtual = new Date()
+
+        let hora = momentoAtual.getHours()
+        let minuto = momentoAtual.getMinutes()
+        let segundo = momentoAtual.getSeconds()
+
+        let strHora = new String(hora)
+        let strMinuto = new String(minuto)
+        let strSegundo = new String(segundo)
+
+
+        if ( strSegundo.length == 1 ) segundo = "0" + segundo 
+
+        if ( strMinuto.length == 1 ) minuto  = "0" + minuto 
+
+        if (strHora.length == 1 ) hora = "0" + hora 
+
+        h.textContent = hora
+        m.textContent = minuto
+        s.textContent = segundo 
+
+        hSmart.textContent = hora
+        mSmart.textContent = minuto
+        sSmart.textContent = segundo
+
+         setTimeout("moveRelogio()",1000)
+    }
+
+    function pegarData() {
+        let diaDaSemana = dataHora.getDay()
+        let dia = dataHora.getDate()
+        let mes = dataHora.getMonth()+1
+        let ano = dataHora.getFullYear()
+
+        let strDia = new String(dia)
+        let strMes = new String(mes)
+
+        if(strDia.length == 1) mes = '0' + dia
+        if ( strMes.length == 1) mes = '0' + mes 
+
+        switch(diaDaSemaana) {
+            case 0: 
+            diaDaSemana = 'DOM'
+            break;
+            case 1: 
+            diaDaSemana = 'SEG'
+            break;
+            case 2: 
+            diaDaSemana = 'TER'
+            break;
+            case 3: 
+            diaDaSemana = 'QUA'
+            break;
+            case 4: 
+            diaDaSemana = 'QUI'
+            break;
+            case 5: 
+            diaDaSemana = 'SEX'
+            break;
+            case 6:
+                diaDaSemana = 'SÁB'
+                break;
+
+        }
+
+        let dataAtual = dia + '/' + mes + '/' + ano 
+        semana.textContent = diaDaSemana
+        data.textContent = dataAtual 
+
+        
+
+    
+    }
+    pegarData()
+    var options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      }
+
+      let teste = new Date()
+
+      console.log(teste.toLocaleString('pt-br'))
+      console.log(teste.toLocaleString('pt-BR',options))
+      console.log(teste.toLocaleDateString('pt-BR'))
+      console.log(teste.toLocaleTimeString('pt-BR'))
+
+      
+
+</script>
+
+
+</html>
